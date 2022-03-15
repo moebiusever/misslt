@@ -6,4 +6,4 @@ layout: default
 
 Welcom to misslt.net!
 
-[File dialog in pyside](2022/03/14/file-dialog-in-pyside.html)
+[File dialog in pyside](_posts/2022-03-14-file-dialog-in-pyside.md)

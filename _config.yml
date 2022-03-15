@@ -1,3 +1,8 @@
 title: misslt
 logo: /assets/images/logo.png
 theme: jekyll-theme-leap-day
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true  
