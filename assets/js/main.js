@@ -1,5 +1,20 @@
-(function($){
-	$(document).ready(function(){
-		//Empty space. Fill this with your site specific JS code
-	});
-})(jQuery);
+var sectionHeight = function () {
+	var total = $(window).height(),
+		$section = $('section').css('height', 'auto');
+
+	if ($section.outerHeight(true) < total) {
+		var margin = $section.outerHeight(true) - $section.height();
+		$section.height(total - margin - 20);
+	} else {
+		$section.css('height', 'auto');
+	}
+}
+
+$(window).resize(sectionHeight);
+
+$(function () {
+
+	sectionHeight();
+
+	$('img').on('load', sectionHeight);
+});

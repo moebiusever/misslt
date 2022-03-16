@@ -1,6 +1,6 @@
-<footer>
+<!-- <footer>
   © 2022 misslt.com <a href="#">Privacy link</a> - Powered by Jekyll.
-</footer>
+</footer> -->
 <!-- <div align="center">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <ins class="adsbygoogle"
@@ -10,3 +10,9 @@
     data-ad-format="auto"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div> -->
+<footer>
+  {% if site.github.is_project_page %}
+    <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+  {% endif %}
+  <p><small>© 2022 misslt.com &mdash; Hosted on GitHub Pages &mdash; Theme by <a href="https://misslt.com">misslt.com</a>  &mdash; Powered by Jekyll</small></p>
+</footer>
