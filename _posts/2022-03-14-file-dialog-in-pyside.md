@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "PySide中的文件对话框!"
-date:   2016-06-04 13:50:39
-categories: jekyll
+date:   2022-03-16 13:50:39
+categories: PySide
 ---
 
 ## 文件保存对话框

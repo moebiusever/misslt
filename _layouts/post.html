@@ -1,12 +1,10 @@
 ---
 layout: default
 ---
-<div class="post-content well">
-<article class="content">
-    <div class="post">{{ content }}</div>
-    <hr />
-    {% include share-page.html %}
-</article>
+<nav class="md-catalog">
+    <ul></ul>
+</nav>
+{{ content }}
 <hr />
 {% assign hasSimilar = '' %}
 {% for post in site.posts  %}
