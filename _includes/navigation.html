@@ -1,0 +1,23 @@
+<nav class="menu">
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="list-separator nav navbar-nav well well-primary {{ page.layout }}">
+			{% for i in site.data.urls %}
+			{% assign current = nil %}
+			{% assign pageurl = page.url | split:'/' | last %}
+			{% assign menuurl = i.url | split:'/' | last %}
+			{% assign linkurl = nil %}
+			{% if i.url contains '://' %}
+			{% assign linkurl = i.url %}
+			{% else %}
+			{% assign linkurl = i.url | prepend: site.baseurl %}
+			{% endif %}
+			{% assign target = i.target %}
+			{% unless target %} {% assign target = '_self' %} {% endunless %}
+			{% if pageurl == menuurl or page.layout == i.layout %} {% assign current = 'current-menu-item' %} {% endif
+			%}
+			<li class="{{ current }} {{ pageurl }}"><a href="{{ linkurl }}"
+					target="{{ target }}"><i class="fa {{ i.icon }}"></i> {{ i.text }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</nav>

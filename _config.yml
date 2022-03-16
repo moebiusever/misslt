@@ -1,8 +1,8 @@
 title: misslt
+description: misslt.com docs site
 logo: /assets/images/logo.png
-theme: jekyll-theme-leap-day
+github: https://www.github.com/moebiusever
 plugins:
   - jekyll-relative-links
-relative_links:
-  enabled: true
-  collections: true  
+  - jekyll-paginate
+  - jekyll-gist

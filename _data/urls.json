@@ -1,0 +1,23 @@
+[
+  {
+    "text": "Home",
+    "url": "/",
+    "icon": "fa-home",
+    "layout": "post"
+  },
+  {
+    "text": "Projects",
+    "url": "/projects",
+    "icon": "fa-folder"
+  },
+  {
+    "text": "Github",
+    "url": "/#",
+    "icon": "fa-github"
+  },
+  {
+    "text": "About",
+    "url": "/about/",
+    "icon": "fa-question"
+  }
+]

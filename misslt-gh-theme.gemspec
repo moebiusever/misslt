@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |s|
-  s.name          = "jekyll-theme-leap-day"
-  s.version       = "0.2.0"
+  s.name          = "misslt-gh-theme"
+  s.version       = "0.0.1"
   s.license       = "CC0-1.0"
-  s.authors       = ["Matt Graham", "GitHub, Inc."]
-  s.email         = ["opensource+jekyll-theme-leap-day@github.com"]
-  s.homepage      = "https://github.com/pages-themes/leap-day"
-  s.summary       = "Leap Day is a Jekyll theme for GitHub Pages"
+  s.authors       = ["Mo Yao", "misslt.com"]
+  s.email         = ["mo.yao@misslt.com"]
+  s.homepage      = "https://docs.misslt.com"
+  s.summary       = "misslt-gh-theme is a Jekyll theme for GitHub Pages"
 
   s.files         = `git ls-files -z`.split("\x0").select do |f|
     f.match(%r{^((_includes|_layouts|_sass|assets)/|(LICENSE|README)((\.(txt|md|markdown)|$)))}i)
@@ -21,4 +21,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "html-proofer", "~> 3.0"
   s.add_development_dependency "rubocop-github", "~> 0.16"
   s.add_development_dependency "w3c_validators", "~> 1.3"
+  s.add_development_dependency "jekyll-relative-links", "~> 0.5"
+  s.add_development_dependency "jekyll-paginate", "~> 1.0"
+  s.add_development_dependency "jekyll-gist", "~> 1.4"
 end
