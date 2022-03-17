@@ -360,7 +360,7 @@ blockquote {
     font-style: italic;
 }
 
-code {
+section code {
     font-family: 'Lucida Sans', Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
     font-size: 13px;
     color: #efefef;
@@ -371,7 +371,7 @@ code {
     border-radius: 2px;
 }
 
-pre {
+section pre.highlight {
     padding: 8px 15px;
     background: #333333;
     border-radius: 3px;
