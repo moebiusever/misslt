@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Windows中出现 Fatal Error C1060"
-date:   2022-03-28 12:20:39
-categories: Virtualbox
+date:   2022-03-28 4:20:39
+categories: Windows
 ---
 
 ## 32位Windows系统的内存2G限制会造成这个问题
